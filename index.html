@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="index.css" />
+    <title>WatchVault</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <h1>Watch<span class="reddify">Vault</span></h1>
+        <a href="/watchlist.html">
+          <h2>
+            My Watchlist<img
+              src="/images/popcorn.png"
+              alt="clickable popcorn image that takes you to your saved movies"
+            />
+          </h2>
+        </a>
+      </div>
+    </header>
+    <div class="searchbar-container">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input
+        id="movie-search-input"
+        type="text"
+        class="search-bar"
+        placeholder="Search for a movie"
+      /><button id="movie-search-btn" class="search-button">Search</button>
+    </div>
+    <main>
+      <div class="main-text">
+        <i class="fa-solid fa-film"></i>
+        <p>Start Exploring</p>
+      </div>
+      <div id="movies-list" class="movies-list"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

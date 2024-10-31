@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="watchlist.css" />
+    <title>My Watchlist</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-text">
+        <h1>My<span class="reddify">Watchlist</span></h1>
+        <a href="/index.html">
+          <h2>
+            Search Movies<img
+              src="/images/popcorn.png"
+              alt="clickable popcorn image that takes you to your saved movies"
+            />
+          </h2>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div id="favorites-section-text" class="favorites-section-text">
+        <p>Your watchlist is looking a little empty...</p>
+        <a href="/index.html">
+          <button id="favorites-btn" class="add-to-favorites-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              viewBox="0 0 20 20"
+              height="20"
+              fill="none"
+              class="svg-icon"
+            >
+              <g stroke-width="1.5" stroke-linecap="round" stroke="#de8a2a">
+                <circle r="7.5" cy="10" cx="10"></circle>
+                <path d="m9.99998 7.5v5"></path>
+                <path d="m7.5 9.99998h5"></path>
+              </g>
+            </svg>
+            <span class="lable">Add</span>
+          </button>
+        </a>
+        <p class="add-movies-text">Let's add some movies</p>
+      </div>
+      <div id="favorites-list" class="favorites-list"></div>
+    </main>
+    <script src="favorites.js"></script>
+  </body>
+</html>
