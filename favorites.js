@@ -1,22 +1,3 @@
-function addRemoveButtonListeners() {
-  const removeButtons = document.querySelectorAll(
-    ".remove-from-favorites-button"
-  );
-  removeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const movieId = button.getAttribute("data-movie-id");
-
-      let myWatchList = JSON.parse(localStorage.getItem("myWatchList")) || [];
-
-      myWatchList = myWatchList.filter((movie) => movie.imdbID !== movieId);
-
-      localStorage.setItem("myWatchList", JSON.stringify(myWatchList));
-
-      renderFavorites();
-    });
-  });
-}
-
 function renderFavorites() {
   const favoritesList = JSON.parse(localStorage.getItem("myWatchList")) || [];
   const favoritesContainer = document.getElementById("favorites-list");
@@ -51,6 +32,25 @@ function renderFavorites() {
     .join("");
 
   addRemoveButtonListeners();
+}
+
+function addRemoveButtonListeners() {
+  const removeButtons = document.querySelectorAll(
+    ".remove-from-favorites-button"
+  );
+  removeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const movieId = button.getAttribute("data-movie-id");
+
+      let myWatchList = JSON.parse(localStorage.getItem("myWatchList")) || [];
+
+      myWatchList = myWatchList.filter((movie) => movie.imdbID !== movieId);
+
+      localStorage.setItem("myWatchList", JSON.stringify(myWatchList));
+
+      renderFavorites();
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", renderFavorites);

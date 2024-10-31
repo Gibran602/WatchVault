@@ -1,13 +1,9 @@
-// API key for OMDB
 const movieApiKey = "84e51a6a";
 
 const movieSearchInput = document.getElementById("movie-search-input");
 const movieSearchBtn = document.getElementById("movie-search-btn");
 const moviesList = document.getElementById("movies-list");
-
-// sections to be hidden when movies render
 const mainSection = document.querySelector(".main-text");
-const favoritesMainSection = document.querySelector(".favorites-section-text");
 
 let myWatchList = [];
 
