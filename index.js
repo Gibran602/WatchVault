@@ -5,8 +5,6 @@ const movieSearchBtn = document.getElementById("movie-search-btn");
 const moviesList = document.getElementById("movies-list");
 const mainSection = document.querySelector(".main-text");
 
-let myWatchList = [];
-
 movieSearchInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     movieSearchBtn.click();
