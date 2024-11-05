@@ -268,19 +268,21 @@ main p {
 @media (min-width: 768px) {
   body,
   html {
-    width: 34.375rem;
+    /* width: 34.375rem; */
+    width: 100%;
     margin: 0;
     padding: 0;
     margin: 0 auto;
   }
   /*header section*/
+
   header h1 {
     width: 28.125rem;
-    font-size: 2.674rem;
+    font-size: 4rem;
     font-weight: 800;
   }
   header h2 {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     text-wrap: nowrap;
   }
   .header-text {
@@ -294,6 +296,7 @@ main p {
 
   /*search bar*/
   .searchbar-container {
+    top: -2%;
     width: 31.25rem;
     height: auto;
     margin: 0 auto;
@@ -311,6 +314,7 @@ main p {
   }
   /*movie list section*/
   .movies-list {
+    align-items: flex-start;
     gap: 0;
   }
   .movie-card {
