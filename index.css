@@ -314,12 +314,13 @@ main p {
   }
   /*movie list section*/
   .movies-list {
-    align-items: flex-start;
     gap: 0;
   }
   .movie-card {
+    justify-content: unset;
     flex-direction: row;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    width: 100%;
   }
   .movie-card img {
     width: 12.5rem;
@@ -336,5 +337,8 @@ main p {
   }
   .movie-card p {
     margin: 0.6rem 0;
+  }
+  .movie-not-found {
+    align-self: center;
   }
 }
